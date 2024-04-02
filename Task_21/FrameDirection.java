@@ -63,11 +63,5 @@ public class FrameDirection {
       else {
     	  System.out.println("Control Outside the BottomValue frame");
       }
-      driver.switchTo().defaultContent();
-    WebDriver sr=  driver.switchTo().frame("frame-top");
-      
-      
-      System.out.println(sr.getTitle());
 	}
-
 }
