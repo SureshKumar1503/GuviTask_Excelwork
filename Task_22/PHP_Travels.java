@@ -11,14 +11,16 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PHP_Travels {
       int num1;
       int num2;
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://phptravels.com/demo/");
-		
+		 
 		driver.findElement(By.name("first_name")).sendKeys("Suresh");
 		driver.findElement(By.name("last_name")).sendKeys("kumar");
 		
